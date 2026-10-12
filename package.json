@@ -1,13 +1,24 @@
 {
-  "name": "task11-monorepo", "private": true,
-  "workspaces": ["packages/*"],
+  "name": "task11-monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "test": "vitest run", "lint": "node -e \"console.log('lint ok')\"",
+    "test": "vitest run",
+    "lint": "node -e \"console.log('lint ok')\"",
     "build": "npm run build --workspaces --if-present",
-    "release": "semantic-release", "prepare": "husky"
+    "release": "semantic-release",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "vitest": "^2.1.0", "semantic-release": "^24.2.0", "@semantic-release/changelog": "^6.0.3",
-    "@semantic-release/git": "^10.0.1", "@commitlint/cli": "^19.6.0", "@commitlint/config-conventional": "^19.6.0", "husky": "^9.1.7"
-  }
+    "vitest": "^2.1.0",
+    "semantic-release": "^24.2.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
+    "husky": "^9.1.7"
+  },
+  "version": "1.0.0"
 }
